@@ -12,6 +12,6 @@ spec:
       - name: sleep
         image: alpine:latest
         command: ["/bin/sh","-c"]
-        args: ["echo qqqq"]
+        args: ["echo qqqq && exit 0"]
       restartPolicy: Never
   backoffLimit: 0
